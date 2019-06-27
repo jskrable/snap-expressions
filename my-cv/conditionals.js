@@ -20,7 +20,7 @@ $person.native.field.filter(x => x['@name'] == 'non-academic-employments')
                 'position': y['non-academic-employments']['non-academic-employment']['position'],
                 'start_date': y['non-academic-employments']['non-academic-employment']['start-date'],
                 'end_date': y['non-academic-employments']['non-academic-employment']['end-date'],
-                'institution': y['non-academic-employments']['non-academic-employment']['institution']['line']
+                'institution': y['non-academic-employments']['non-academic-employment']['employer']['line']
                     .toObject(x => x['@type'], y=> y['#text'])
 
            });
