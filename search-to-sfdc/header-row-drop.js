@@ -1,0 +1,1 @@
+$group.map(x => x.filter((v,k) => $group[0].entries().filter(e => e[1] == 'TBD').map(x => x[0]).indexOf(k) == -1))
